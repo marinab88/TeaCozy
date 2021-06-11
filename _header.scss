@@ -1,0 +1,29 @@
+/*     Header    */
+  .container {
+    height: 69px;
+    width: $width;
+    position: fixed;
+    border-bottom: 1px solid $color;
+    background-color: $background-color;
+    #logo {
+      padding-left: $padding;
+      height: 50px;
+      float: left;
+    }
+    nav {
+      ul {
+        list-style: none;
+        float: right;
+        display: flex;
+        li {
+          display: inline;
+          padding-right: 15px;
+          a {
+            color: $color;
+            text-decoration: underline;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }

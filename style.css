@@ -1,73 +1,54 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  color: seashell;
-  background-color: black;
-  opacity: 0.9;
-  text-align: center;
-  display: block;
-}
-
-/*   Header    */
-header {
+/*     Header    */
+.container {
   height: 69px;
   width: 100%;
   position: fixed;
   border-bottom: 1px solid seashell;
-}
+  background-color: black; }
+  .container #logo {
+    padding-left: 10px;
+    height: 50px;
+    float: left; }
+  .container nav ul {
+    list-style: none;
+    float: right;
+    display: flex; }
+    .container nav ul li {
+      display: inline;
+      padding-right: 15px; }
+      .container nav ul li a {
+        color: seashell;
+        text-decoration: underline;
+        text-align: right; }
 
-header img {
-  padding-left: 10px;
-  height: 50px;
-  float: left;
-}
-
-header ul{
-  list-style: none;
-  float: right;
-  
-}
-
-header li {
-  display: inline;
-  padding-right: 15px;
-}
-
-header a {
-  color: seashell;
-  text-decoration: underline;
-  text-align: right;
-}
-
-/*   Mission    */
+/*   Mission Part    */
 .mission {
   padding-top: 69px;
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
+  .mission #missionImg {
+    height: 700px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .mission .missionText {
+    position: absolute;
+    background-color: black;
+    width: 100%; }
 
-.mission img {
-  height: 700px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
- }
-
-.missionText {
-  position: absolute;
-  background-color: black;
-  width: 100%;
-} 
-
-/*     Month Tea      */
+/*    Tea of the month Part    */
 .monthTea1 {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
+  .monthTea1 .tea .teaImg {
+    height: 200px;
+    width: 300px; }
+  .monthTea1 .tea p {
+    padding-top: 10px; }
 
 .monthTea2 {
   width: 1000px;
@@ -75,80 +56,72 @@ header a {
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; }
+  .monthTea2 .tea .teaImg {
+    height: 200px;
+    width: 300px; }
+  .monthTea2 .tea p {
+    padding-top: 10px; }
 
-.tea img {
-  height: 200px;
-  width: 300px;
-}
-
-.tea p {
-  padding-top: 10px;
-}  
-
-/*   Locations    */
+/*     Location Part       */
 .locations {
   width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: left;
   align-items: center;
-  flex: 1 1200px;
-}
+  flex: 1 1200px; }
+  .locations #locationImg {
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 1200px;
+    align-items: center; }
+  .locations h2 {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: transparent; }
+  .locations .locations-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: transparent;
+    flex-wrap: wrap;
+    opacity: 1;
+    position: absolute;
+    padding-top: 80px; }
+    .locations .locations-container .loc {
+      margin: 20px;
+      display: flex;
+      flex-basis: 300px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 1;
+      background-color: black; }
 
-.locations img {
-  margin-left: auto;
-  margin-right: auto;
-  height: 500px;
-  width: 1200px;
-  align-items: center;
-}
-
-.locations h2 {
-  position:absolute;
-  align-items: center;
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 15px;
-}
-
-.locations-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  background-color: transparent;
-  flex-wrap: wrap;
-  opacity: 1; 
-}
-
-.loc {
-  margin: 20px;
-  display: flex;
-  flex-basis: 300px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 1;  
-  background-color: black;
-}
-
-.locations .locations-container {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-}
-
-/*     Above Footer     */
+/*    Footer      */
 .aboveFooter {
-  height: 200px;
-}
+  height: 200px; }
 
-/*      Footer        */
-footer {
+footer p {
   padding-left: 20px;
-  text-align: left;
-}
+  text-align: left; }
+
+* {
+  display: block; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
